@@ -16,7 +16,10 @@ The intial conditions (mass, radius, position, intial velocity of body 1) are gi
    mechanical energy in the system and to serve as a soft check of the error introduced in the algorithm when the distances between the bodies become very small
    (this is introduced by machine precision).
 4. The simulation runs indefinitely until collision between the bodies or the user exits the simulation.
-5. A trail feature has been added purely for aesthetic purposes.
+5. An additional feature of the solver is that it can predict the minimum initial velocity to be given to body 1 to avoid collision with body 2 based on the ICs.
+   This is done by using the bisection root-finding method implemented as a binary search in the code.
+6. It can also predict the escape velocity of body 1 to escape the gravitational influence of body 2 and keep the sim running indefinitely.
+7. A trail feature has been added purely for aesthetic purposes.
 
 # Installation
 1. Python Version : 3.10+
