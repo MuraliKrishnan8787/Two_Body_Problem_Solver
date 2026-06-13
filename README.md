@@ -7,7 +7,6 @@ An interactive computational physics simulator/solver built using Python that mo
 2. Pygame - Telemetry Visualisation
 
 # Workflow
-
 The intial conditions (mass, radius, position, intial velocity of body 1) are given by the user.
 
 1. We calculate the position of the centre of mass (COM) and henceforth perform all calculations w.r.t the COM.
